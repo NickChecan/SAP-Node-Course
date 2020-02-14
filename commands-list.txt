@@ -9,3 +9,6 @@ npm i express --save
 
 # Run project through NPM
 npm start
+
+# Install middleware to parse request body
+npm i body-parser --save
