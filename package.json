@@ -1,0 +1,23 @@
+{
+  "name": "node-course",
+  "version": "1.0.0",
+  "description": "\"SAP Node Course\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickChecan/SAP-Node-Course.git"
+  },
+  "author": "Nicholas Checan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NickChecan/SAP-Node-Course/issues"
+  },
+  "homepage": "https://github.com/NickChecan/SAP-Node-Course#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

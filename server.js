@@ -1,18 +1,7 @@
-const https = require('https')
+const express = require('express')
+const app = express()
+const port = 3000
 
-// Check https://nodejs.org/es/docs/guides/anatomy-of-an-http-transaction/
-https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (res) => {
-    
-    let body = ''
-    
-    res.on('data', (chunk) => {
-        body += chunk
-    })
-    
-    res.on('end', () => {
-        console.log(JSON.parse(body).explanation)
-    })
+app.get('/', (req, res) => res.send('Hello World'))
 
-}).on("error", (err) => {
-    console.log("Error: " + err.message)
-})
+app.listen(port, () => console.log(`Listening on port ${port}!`))

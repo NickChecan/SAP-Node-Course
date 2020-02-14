@@ -1,0 +1,11 @@
+# Run javascript file using NodeJs
+node server.js
+
+# Initialize NPM
+npm init
+
+# Install external module (Express)
+npm i express --save
+
+# Run project through NPM
+npm start
